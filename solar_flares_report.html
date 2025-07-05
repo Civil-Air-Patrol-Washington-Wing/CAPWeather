@@ -1,0 +1,49 @@
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>NASA Solar Flares (2025-06-27 to 2025-07-04)</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f4f4f4; padding: 20px; line-height: 1.6; }
+        h1 { color: #333; }
+        .flare {
+            background: white;
+            border-left: 6px solid #2196F3;
+            margin-bottom: 20px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .flare a { color: #2196F3; text-decoration: none; }
+        .flare h2 { margin-top: 0; }
+        .label { font-weight: bold; }
+    </style>
+    <script>
+        let scrollSpeed = 0.5;
+        let scrollInterval = 20;
+        window.onload = function() {
+            function autoScroll() {
+                window.scrollBy(0, scrollSpeed);
+                if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+                    window.scrollTo(0, 0);
+                }
+            }
+            setInterval(autoScroll, scrollInterval);
+        };
+    </script>
+</head>
+<body>
+    <h1>NASA Solar Flare Events (2025-06-27 to 2025-07-04)</h1>
+
+    <div class="flare">
+        <h2>2025-06-28T19:40:00-FLR-001 (C4.0)</h2>
+        <p><span class="label">Begin:</span> 2025-06-28T19:40Z |
+           <span class="label">Peak:</span> 2025-06-28T19:54Z |
+           <span class="label">End:</span> 2025-06-28T20:01Z</p>
+        <p><span class="label">Location:</span> N07W22 |
+           <span class="label">Region:</span> 14126</p>
+        <p><span class="label">Instruments:</span> GOES-P: EXIS 1.0-8.0</p>
+        <p><span class="label">Link:</span> <a href="https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/FLR/39817/-1">https://webtools.ccmc.gsfc.nasa.gov/DONKI/view/FLR/39817/-1</a></p>
+        <p><span class="label">Linked Events:</span><ul><li>2025-06-28T21:00:00-CME-001</li></ul></p>
+        
+    </div>
+    </body></html>
